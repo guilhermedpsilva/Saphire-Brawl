@@ -32,6 +32,8 @@ body {
     background-attachment: fixed;
     background-size: cover;
     background-position: bottom center;
+    min-width: 300px;
+    max-width: 100vh;
 }
 
 header {
