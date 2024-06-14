@@ -1,0 +1,295 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'brawl';
+    src: url(fontes/BUBBLEGUM\ 2\ BACKGROUND\ PERSONAL\ USE.ttf);
+    src: url(fontes/BUBBLEGUM\ 2\ PERSONAL\ USE.ttf);
+}
+
+@font-face {
+    font-family: 'pixel';
+    src: url(fontes/VCR_OSD_MONO_1.001.ttf);
+}
+
+@font-face {
+    font-family: 'design';
+    src: url(fontes/Designer.otf);
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+:root {
+    --fonte-principal: 'brawl', sans-serif;
+    --fonte-paragrafos: 'pixel', sans-serif;
+    --fonte-cabecalho: 'design', sans-serif;
+}
+
+body {
+    background-color: rgb(68, 115, 245);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: bottom center;
+}
+
+header {
+    background-image: url(img/header.webp);
+    background-size: cover; 
+    text-align: center;
+    height: 185px;
+    border-bottom: 1px solid black;
+}
+
+header h1 {
+    font-family: var(--fonte-principal);
+    font-weight: lighter;
+}
+
+header > nav {
+    text-align: center;
+    margin-top: 20px;
+    box-shadow: 1px 1px 1px black;
+}
+
+header a {
+    padding: 8px;
+    margin: 10px 30px 0px 30px;
+    background-color: white;
+    text-decoration: none;
+    border-radius: 7px;
+    font-family: var(--fonte-paragrafos);
+    color: black;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.384);
+    border: 1px solid black;
+}
+
+header a:hover {
+    text-decoration: underline;
+    background-color: rgba(148, 166, 248, 0.781);
+}
+
+header a:active {
+    background-color: rgba(97, 125, 248, 0.781);
+    color: white;
+}
+
+span.cima {
+    color: white;
+    text-shadow: 5px 5px 2px black;
+    padding-bottom: 100px;
+}
+
+span.baixo {
+   font-size: 2em;
+   font-weight: lighter;
+   color: red;
+   text-shadow: 5px 10px black;
+   display: grid;
+}
+
+main h1{
+    text-align: center;
+    font-family: var(--fonte-principal);
+    font-weight: lighter;
+    color: white;
+    padding: 15px 0px 15px 0px;
+    text-shadow: 2px 1px 1px black;
+    margin: 40px 0px 40px 0px;
+}
+
+.inicio {
+    text-align: center;
+    font-family: var(--fonte-principal);
+    color: rgb(255, 17, 0);
+    font-weight: lighter;
+    font-size: 1.2em;
+    border: 1px solid black;
+    background-color: rgba(255, 255, 255, 0.582);
+    max-width: 1000px;
+    min-width: 400px;
+    margin: auto;
+    text-shadow: 1px 1px 1px black;
+}
+
+hr {
+    border: 1px solid black;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+main h2 {
+    text-align: center;
+    padding: 15px 0px 15px 0px;
+    font-family: var(--fonte-cabecalho);
+    font-weight: normal;
+    color: white;
+    border-bottom: 1px solid black;
+    max-width: 770px;
+    margin: auto;
+    text-shadow: 2px 1px 1px black;
+}
+
+main h3 {
+    padding: 10px;
+    font-family: var(--fonte-cabecalho);
+    color: white;
+    margin: 60px 0px 30px 0px;
+    text-shadow: 2px 1px 1px black; 
+}
+
+div.espaco {
+    margin: 200px;
+}
+
+div#img1 {
+    height: 100vh;
+    background-image: url(img/background2.webp);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    box-shadow: inset 0px 8px 5px rgba(0, 0, 0, 0.452);
+}
+
+#img1 p {
+    background-color: rgba(255, 255, 255, 0.616);
+    margin: 200px 20px 0px 20px;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 7px;
+    display: inline-block;
+    font-family: var(--fonte-paragrafos);
+    font-size: 1.5em;
+    text-shadow: 2px 1px 1px rgb(255, 255, 255);
+}
+
+div#img2 {
+    height: 100vh;
+    background-image: url(img/background1.webp);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    box-shadow: inset 0px 10px 5px rgba(0, 0, 0, 0.267);
+}
+
+div#img2 p {
+    background-color: rgba(255, 255, 255, 0.616);
+    font-family: var(--fonte-paragrafos);
+    max-width: 400px;
+    padding: 20px;
+    margin: 200px 20px 0px 20px;
+    display: inline-block;
+    border-radius: 7px;
+    font-size: 1.5em;
+    text-shadow: 2px 1px 1px rgb(255, 255, 255);
+}
+
+div#img3 {
+    height: 100vh;
+    background-image: url(img/background3.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    box-shadow: inset 0px 10px 5px rgba(0, 0, 0, 0.377);
+}
+
+div#img3 p {
+    background-color: rgba(255, 255, 255, 0.616);
+    font-family: var(--fonte-paragrafos);
+    max-width: 400px;
+    margin: 200px 20px 0px 20px;
+    display: inline-block;
+    border-radius: 7px;
+    padding: 20px;
+    font-size: 1.5em;
+    text-shadow: 2px 1px 1px rgb(255, 255, 255);
+}
+
+div#img4 {
+    height: 100vh;
+    background-image: url(img/background4.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    box-shadow: inset 0px 10px 5px rgba(0, 0, 0, 0.377);
+    background-position: center center;
+}
+
+div#img4 p { 
+    margin: 200px 20px 0px 20px;
+    background-color: rgba(255, 255, 255, 0.616);
+    font-family: var(--fonte-paragrafos);
+    max-width: 400px;
+    border-radius: 7px;
+    padding: 20px;
+    font-size: 1.7em;
+    display: inline-block;
+    text-shadow: 2px 1px 1px rgb(255, 255, 255);
+}
+
+div#img5 {
+    height: 90vh;
+    background-image: url(img/background5.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    box-shadow: inset 0px 8px 5px rgba(0, 0, 0, 0.322);
+    background-position: center center;
+}
+
+div#img5 p {
+    margin: 200px 20px 0px 20px;
+    background-color: rgba(255, 255, 255, 0.616);
+    font-family: var(--fonte-paragrafos);
+    font-size: 1.5em;
+    display: inline-block;
+    max-width: 400px;
+    border-radius: 7px;
+    padding: 20px;
+    text-shadow: 2px 1px 1px rgb(255, 255, 255);
+}
+
+aside {
+    margin: 50px 10px 0px 10px;
+    text-align: center;
+}
+
+aside p {
+    max-width: 700px;
+    font-family: var(--fonte-paragrafos);
+    font-size: 1.3em;
+    margin: 20px auto;
+    border: 1px solid black;
+    background-color: rgba(255, 255, 255, 0.582);
+    padding: 10px;
+}
+
+footer {
+    background-color: black;
+    padding: 5px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+footer p {
+    color: white;
+    font-family: var(--fonte-cabecalho);
+    font-size: 1em;
+    padding: 5px;
+    font-weight: lighter;
+    text-shadow: 2px 2px 1px blue;
+}
+
+footer a {
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    color: rgb(88, 141, 255);
+    text-decoration: underline;
+}
+
+footer a:active {
+    color: rgb(7, 72, 212);
+}
